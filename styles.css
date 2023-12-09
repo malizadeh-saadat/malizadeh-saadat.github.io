@@ -1,0 +1,198 @@
+/* Reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    padding: 20px;
+    background: url('form-bg.jpg') no-repeat center center fixed; 
+    background-size: cover;
+}
+
+/* Header styling */
+header {
+    background: rgba(0, 0, 0, 0.8); /* Semi-transparent background */
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+header img {
+    width: 100px;
+    height: auto;
+    border-radius: 50%;
+}
+
+/* Navigation buttons */
+nav button {
+    padding: 10px 20px;
+    margin: 10px;
+    border: none;
+    background-color: #0044cc;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+nav button:hover {
+    background-color: #003399;
+}
+
+/* Contact form page specific styles */
+.contact-page body {
+    background: url('contact-bg.jpg') no-repeat center center fixed; 
+    background-size: cover;
+}
+
+/* Centered content for better alignment */
+.centered-text, footer {
+    text-align: center;
+}
+
+/* Footer styling */
+footer {
+    background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent background */
+    color: white;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+/* Responsive design adjustments */
+@media screen and (max-width: 400px) {
+    header h1, nav button {
+        font-size: smaller;
+    }
+}
+
+/* Contact form styling */
+.contact-form {
+    background: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 600px;
+    margin: 30px auto;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Form elements styling */
+.form-group label, .form-group input[type="text"],
+.form-group input[type="email"], .form-group textarea {
+    display: block;
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+.form-group button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background-color: #0044cc;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.form-group button:hover {
+    background-color: #003399;
+}
+
+/* Ensure all text is centered */
+h1, h2, h3, p, ul {
+    text-align: center;
+}
+
+/* ... existing styles ... */
+
+/* Section styling */
+section {
+    max-width: 1024px;
+    margin: 20px auto;
+    padding: 20px;
+    border-bottom: 2px solid #e0e0e0; /* Stylish horizontal line */
+}
+
+/* Alternate background color for different sections */
+section:nth-child(even) {
+    background-color: #f4f4f4; /* Light gray for even sections */
+}
+
+section:nth-child(odd) {
+    background-color: #ffffff; /* White for odd sections */
+}
+
+/* Specific section styles */
+#about-me {
+    background-color: #d9e8f5; /* Light blue */
+}
+
+#education {
+    background-color: #f0f0f0; /* Light gray */
+}
+
+/* ... other existing styles ... */
+#about-me ul {
+    list-style-type: none; /* Removes the bullet points */
+    padding: 0;
+}
+
+/* ... existing styles ... */
+
+/* Apply the fancy background to the form page */
+.contact-page body {
+    background: url('form-bg.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+
+/* Enhance the form's look */
+.contact-form {
+    background: rgba(255, 255, 255, 0.9); /* Semi-transparent white with a bit more opacity for better readability */
+    padding: 30px;
+    border-radius: 15px; /* More pronounced rounded corners */
+    max-width: 600px;
+    margin: 50px auto; /* Increase margin for more space from the top */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5); /* Stronger shadow for a pop-out effect */
+    border: 1px solid #ccc; /* Subtle border for depth */
+}
+
+/* Style individual form fields with more fancy aesthetics */
+.form-group label, 
+.form-group input[type="text"],
+.form-group input[type="email"], 
+.form-group textarea {
+    padding: 12px; /* More padding for a larger touch area */
+    border: 2px solid #d9e8f5; /* Light blue border */
+    background: #ffffff; /* Solid white background */
+    margin-bottom: 15px; /* Increase spacing between fields */
+    transition: all 0.3s ease-in-out; /* Smooth transition for interactions */
+}
+
+/* Change border color on focus */
+.form-group input[type="text"]:focus,
+.form-group input[type="email"]:focus,
+.form-group textarea:focus {
+    outline: none; /* Removes the default focus outline */
+    border-color: #0044cc; /* Highlight color for focus */
+    box-shadow: 0 0 8px rgba(0, 68, 204, 0.3); /* Glow effect on focus */
+}
+
+/* Hover effect for buttons */
+.form-group button {
+    transition: all 0.3s ease-in-out; /* Smooth transition for interactions */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+}
+
+.form-group button:hover {
+    background-color: #002966; /* Darker shade on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* More pronounced shadow on hover */
+}
+
+/* ... other existing styles ... */
+

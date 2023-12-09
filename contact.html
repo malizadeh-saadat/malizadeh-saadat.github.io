@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact Me</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<main class="contact-form">
+    <h1>Contact Me</h1>
+    <form id="contactForm" action="https://httpbin.org/post" method="POST">
+        <div class="form-group">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+        </div>
+
+        <div class="form-group">
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+
+        <div class="form-group">
+            <label for="address">Address:</label>
+            <input type="text" id="address" name="address" required>
+        </div>
+
+        <div class="form-group">
+            <label for="city">City:</label>
+            <input list="cities" id="city" name="city" required>
+            <datalist id="cities">
+                <!-- Add common Canadian cities here -->
+                <option value="Toronto">
+                <option value="Montreal">
+                <option value="Vancouver">
+                <option value="Calgary">
+                <!-- ... more cities -->
+            </datalist>
+        </div>
+
+        <div class="form-group">
+            <label for="postal-code">Postal Code:</label>
+            <input type="text" id="postal-code" name="postal_code" pattern="^[A-Za-z]\d[A-Za-z] ?\d[A-Za-z]\d$" title="Must be a valid Canadian Postal Code" required>
+        </div>
+
+        <div class="form-group">
+            <label>This is about:</label>
+            <div>
+                <input type="radio" id="question" name="inquiry" value="Question" required>
+                <label for="question">Question</label>
+                <input type="radio" id="comment" name="inquiry" value="Comment" required>
+                <label for="comment">Comment</label>
+                <input type="radio" id="hiring" name="inquiry" value="Hiring" required>
+                <label for="hiring">Hiring</label>
+            </div>
+        </div>
+
+        <div class="form-group" id="rate-section" style="display: none;">
+            <label for="rate">Hourly Rate:</label>
+            <input type="number" id="rate" name="hourly_rate" min="0" step="0.01" pattern="^\d+(?:\.\d{1,2})?$" title="Enter a valid hourly rate.">
+        </div>
+
+        <div class="form-group">
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+        </div>
+
+        <div class="form-group">
+            <!-- Additional input control of your own choosing -->
+            <!-- Example: checkbox for subscribing to a newsletter -->
+            <input type="checkbox" id="subscribe" name="subscribe">
+            <label for="subscribe">Subscribe to newsletter</label>
+        </div>
+
+        <div class="form-group">
+            <button type="submit">Send Message</button>
+        </div>
+    </form>
+</main>
+<footer>
+    <p>&copy; 2023 Mahlegha Alizadeh</p>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
